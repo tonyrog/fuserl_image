@@ -1,0 +1,10 @@
+{ application, fuserl_image,
+  [ 
+    { description, "image files" }, 
+    {vsn, git},
+    {modules, ["@@MODULES@@"]},
+    { registered, [  ] },
+    { applications, [ kernel, stdlib, fuserl ] },
+    {mod, {fuserl_image, []}}
+  ] 
+}.
